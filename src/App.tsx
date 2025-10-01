@@ -22,7 +22,7 @@ export default function App() {
 
     return (
         <>
-            <BobsBurgersContent data = {data} />   /*might have to change name of component*/
+            <BobsBurgersContent data = {data} />
         </>
     )
 }

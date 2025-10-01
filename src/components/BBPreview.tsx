@@ -19,12 +19,18 @@ const SingleCharDiv=styled.div<{ $name: string }>`
     text-align: center;
 `;
 
+const CharacterImage = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+`;
+
 
 export default function BBPreview({ character }: { character: Character }) {
     return (
         <SingleCharDiv $name={character.name}>
             <h1>{character.name}</h1>
-            <img src={character.image} alt={`image of ${character.name}`} />
+            <CharacterImage src={character.image} alt={`image of ${character.name}`} />
         </SingleCharDiv>
     );
 }
